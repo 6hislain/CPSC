@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="CPSC/CPSC.vcxproj" Id="64eb89de-1446-4119-9c38-fdba2a257042" />
+</Solution>
