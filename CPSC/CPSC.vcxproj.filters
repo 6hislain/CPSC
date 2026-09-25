@@ -18,5 +18,8 @@
     <ClCompile Include="coffee_price.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lab3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

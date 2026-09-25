@@ -2,7 +2,7 @@
 
 #pragma warning(disable : 4996)
 
-void main() {
+void main1() {
 	float coffee, price, total;
 
 	printf("Enter the number of coffee cups: ");
