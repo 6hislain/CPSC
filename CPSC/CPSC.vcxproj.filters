@@ -21,6 +21,12 @@
     <ClCompile Include="lab3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lab4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lab4ex2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="lab4ex1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
