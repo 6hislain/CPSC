@@ -21,5 +21,8 @@
     <ClCompile Include="lab3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lab4ex1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="coffee_price.cpp" />
     <ClCompile Include="lab3.cpp" />
+    <ClCompile Include="lab4ex1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
