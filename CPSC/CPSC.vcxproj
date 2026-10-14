@@ -148,6 +148,10 @@
     <ClCompile Include="lab5ex2.cpp" />
     <ClCompile Include="lab5ex3.cpp" />
     <ClCompile Include="lab5ex4.cpp" />
+    <ClCompile Include="lab6ex1.cpp" />
+    <ClCompile Include="lab6ex2.cpp" />
+    <ClCompile Include="lab6ex3.cpp" />
+    <ClCompile Include="parking.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
