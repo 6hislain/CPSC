@@ -54,5 +54,14 @@
     <ClCompile Include="parking.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lab7ex1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lab7ex2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lab7ex3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
