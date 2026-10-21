@@ -2,7 +2,7 @@
 
 #pragma warning(disable: 4996)
 
-void main() {
+void main63() {
 	int unitsFrom, unitsTo;
 	float temp, answer;
 
@@ -16,6 +16,11 @@ void main() {
 	scanf("%d", &unitsFrom);
 	getchar();
 
+	if (unitsFrom < 1 || unitsFrom > 4) {
+		printf("\nYou didn't select a temperature to convert FROM!\n");
+		return;
+	}
+
 	printf("\nEnter the temperature value: ");
 	scanf("%f", &temp);
 	getchar();
@@ -24,38 +29,60 @@ void main() {
 	scanf("%d", &unitsTo);
 	getchar();
 
-	if (unitsTo == unitsFrom)
+	if (unitsTo < 1 || unitsTo > 4) {
+		printf("\nYou didn't select a temperature to convert TO!\n");
+		return;
+	}
+
+	if (unitsFrom == unitsTo)
 		answer = temp;
 
 	// celcius
-	if (unitsTo == 1 && unitsFrom == 2)
-		answer = temp * 1.8 + 32;
-	if (unitsTo == 1 && unitsFrom == 3)
+	else if (unitsFrom == 1 && unitsTo == 2)
+		answer = (temp * 1.8) + 32;
+	else if (unitsFrom == 1 && unitsTo == 3)
 		answer = temp + 273.15;
-	if (unitsTo == 1 && unitsFrom == 4)
-		answer = temp * 1.8 + 32 + 459.67;
+	else if (unitsFrom == 1 && unitsTo == 4)
+		answer = (temp * 1.8) + 32 + 459.67;
 
 	// fahrenheit
-	if (unitsTo == 2 && unitsFrom == 1)
+	else if (unitsFrom == 2 && unitsTo == 1)
 		answer = (temp - 32) / 1.8;
-	if (unitsTo == 2 && unitsFrom == 3)
+	else if (unitsFrom == 2 && unitsTo == 3)
 		answer = (temp + 459.67) / 1.8;
-	if (unitsTo == 2 && unitsFrom == 4)
+	else if (unitsFrom == 2 && unitsTo == 4)
 		answer = temp + 459.67;
 
 	// kelvin
-	if (unitsTo == 3 && unitsFrom == 1)
+	else if (unitsFrom == 3 && unitsTo == 1)
 		answer = temp - 273.15;
-	if (unitsTo == 3 && unitsFrom == 2)
-		answer = temp * 1.8 - 459.67;
-	if (unitsTo == 3 && unitsFrom == 4)
+	else if (unitsFrom == 3 && unitsTo == 2)
+		answer = (temp * 1.8) - 459.67;
+	else if (unitsFrom == 3 && unitsTo == 4)
 		answer = temp * 1.8;
 
 	// rankine
-	if (unitsTo == 4 && unitsFrom == 1)
+	else if (unitsFrom == 4 && unitsTo == 1)
 		answer = (temp - 32 - 459.57) / 1.8;
-	if (unitsTo == 4 && unitsFrom == 2)
+	else if (unitsFrom == 4 && unitsTo == 2)
 		answer = temp - 459.67;
-	if (unitsTo == 4 && unitsFrom == 3)
+	else if (unitsFrom == 4 && unitsTo == 3)
 		answer = temp / 1.8;
+
+	printf("\nThe temperature is %0.2f ", answer);
+
+	switch (unitsTo) {
+	case 1:
+		printf("Celsius.\n");
+		break;
+	case 2:
+		printf("Fahrenheit.\n");
+		break;
+	case 3:
+		printf("Kelvin.\n");
+		break;
+	case 4:
+		printf("Rankine.\n");
+		break;
+	}
 }
