@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-void main() {
+void main3() {
 	int i, j, pass = 0, fail = 0;
 	float diameter;
 
