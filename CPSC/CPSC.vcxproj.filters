@@ -63,5 +63,8 @@
     <ClCompile Include="lab7ex3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="nestedForLoop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

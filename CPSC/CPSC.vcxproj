@@ -154,6 +154,7 @@
     <ClCompile Include="lab7ex1.cpp" />
     <ClCompile Include="lab7ex2.cpp" />
     <ClCompile Include="lab7ex3.cpp" />
+    <ClCompile Include="nestedForLoop.cpp" />
     <ClCompile Include="parking.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
